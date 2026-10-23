@@ -26,15 +26,14 @@ export default function IndexPage() {
           </p>
           <div className="hero-actions">
             <Link className="button button-light" href="/stay">
-              Explore the stay <span aria-hidden="true">↗</span>
+              Explore the stay
             </Link>
             <Link className="text-link light-link" href="/contact">
-              Plan your visit <span aria-hidden="true">→</span>
+              Plan your visit
             </Link>
           </div>
         </div>
         <div className="hero-caption">
-          <span>15°16&apos; N&nbsp; 73°55&apos; E</span>
           <span>Fatona, Colva · Goa</span>
         </div>
       </section>
@@ -48,7 +47,11 @@ export default function IndexPage() {
           </h2>
           <br />
           <div className="welcome-mark">
-            <strong>Welcome to Arth Exotica</strong>
+            <img
+              alt="Arth Exotica logo"
+              className="welcome-logo"
+              src="/hotel-logo-without-bg.png"
+            />
             <p className="section-label">
               A four-star luxury property in Goa, in the heart of Colva
             </p>
@@ -60,7 +63,7 @@ export default function IndexPage() {
             gathering worth remembering, make yourself at home.
           </p>
           <Link className="text-link" href="/experiences">
-            Discover the hotel <span aria-hidden="true">→</span>
+            Discover the hotel
           </Link>
         </div>
       </section>
@@ -163,13 +166,13 @@ export default function IndexPage() {
                 rel="noreferrer"
                 target="_blank"
               >
-                View map <span aria-hidden="true">↗</span>
+                View map
               </a>
               <a
                 className="hotel-contact-link"
-                href={`mailto:${siteConfig.membershipEmail}`}
+                href={`mailto:${siteConfig.reservationEmail}`}
               >
-                {siteConfig.membershipEmail}
+                {siteConfig.reservationEmail}
               </a>
               <a
                 className="hotel-contact-link"
@@ -196,7 +199,7 @@ export default function IndexPage() {
             Quick answers for planning your time at Arth Exotica.
           </p>
           <Link className="text-link" href="/faqs">
-            Explore all FAQs <span aria-hidden="true">→</span>
+            Explore all FAQs
           </Link>
         </div>
         <div className="faq-list">
@@ -255,20 +258,20 @@ export default function IndexPage() {
             </h2>
           </div>
           <Link className="text-link light-link" href="/experiences">
-            Explore experiences <span aria-hidden="true">→</span>
+            Explore experiences
           </Link>
         </div>
         <div className="image-trio">
           <Link className="image-tile" href="/stay">
             <img alt="A guest room at Arth Exotica" src="/deluxe-room.jpg" />
             <span>
-              Rest well <b>Rooms & suites ↗</b>
+              Rest well <b>Rooms & suites</b>
             </span>
           </Link>
           <Link className="image-tile" href="/dining">
             <img alt="Restaurant dining at Arth Exotica" src="/dine-in-2.jpg" />
             <span>
-              Gather around <b>Dining ↗</b>
+              Gather around <b>Dining</b>
             </span>
           </Link>
           <Link className="image-tile" href="/meetings">
@@ -277,7 +280,7 @@ export default function IndexPage() {
               src="/meeting-room-1.jpg"
             />
             <span>
-              Bring people together <b>Meetings & events ↗</b>
+              Bring people together <b>Meetings & events</b>
             </span>
           </Link>
         </div>
@@ -299,7 +302,7 @@ export default function IndexPage() {
             amenities that shape your time here.
           </p>
           <Link className="text-link" href="/experiences#amenities">
-            See the amenities <span aria-hidden="true">→</span>
+            See the amenities
           </Link>
         </div>
       </section>

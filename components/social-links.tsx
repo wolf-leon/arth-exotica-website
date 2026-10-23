@@ -50,9 +50,6 @@ export function SocialLinks({ className = "" }: { className?: string }) {
         >
           <SocialMark label={social.label} />
           <span>{social.label}</span>
-          <span aria-hidden="true" className="social-arrow">
-            ↗
-          </span>
         </a>
       ))}
     </div>

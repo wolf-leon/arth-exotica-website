@@ -16,7 +16,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
           href="/"
           onClick={() => setMenuOpen(false)}
         >
-          <img alt="" src="/hotel-logo.png" />
+          <img alt="" src="/hotel-logo.jpeg" />
           <span className="brand-name">
             Arth Exotica<small>Fatona · Colva · Goa</small>
           </span>
@@ -35,13 +35,8 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
             </Link>
           ))}
         </nav>
-        <a
-          className="header-book"
-          href={siteConfig.bookingUrl}
-          rel="noreferrer"
-          target="_blank"
-        >
-          Book a stay <span aria-hidden="true">↗</span>
+        <a className="header-book" href={siteConfig.bookingUrl}>
+          Book a stay
         </a>
         <button
           aria-expanded={menuOpen}
@@ -58,7 +53,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="footer-top">
           <div className="footer-brand">
             <Link className="brand" href="/">
-              <img alt="" src="/hotel-logo.png" />
+              <img alt="" src="/hotel-logo.jpeg" />
               <span className="brand-name">
                 Arth Exotica<small>Fatona · Colva · Goa</small>
               </span>
@@ -86,9 +81,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
             <Link href="/experiences#guest-information">Guest information</Link>
             <Link href="/privacy">Privacy policy</Link>
             <Link href="/cookies">Cookie policy</Link>
-            <a href={siteConfig.bookingUrl} rel="noreferrer" target="_blank">
-              Book your stay ↗
-            </a>
+            <a href={siteConfig.bookingUrl}>Book your stay</a>
           </div>
           <div className="footer-column">
             <p className="footer-title">Find us</p>
@@ -97,13 +90,28 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
               <br />
               {siteConfig.address.region}
             </p>
-            <Link href="/contact">Directions & contact →</Link>
+            <p className="footer-title footer-contact-label">
+              Booking & reservations
+            </p>
+            <div className="footer-contact-highlight">
+              <a href={`mailto:${siteConfig.reservationEmail}`}>
+                {siteConfig.reservationEmail}
+              </a>
+              <a
+                href={siteConfig.stayWhatsAppUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {siteConfig.membershipWhatsApp}
+              </a>
+            </div>
+            <Link href="/contact">Directions & contact</Link>
             <a
               href={siteConfig.googleReviewsUrl}
               rel="noreferrer"
               target="_blank"
             >
-              Google Reviews ↗
+              Google Reviews
             </a>
             <p className="footer-gstin">GSTIN: {siteConfig.gstin}</p>
             <p className="footer-title socials-title">Follow along</p>

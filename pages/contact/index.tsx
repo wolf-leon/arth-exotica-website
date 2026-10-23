@@ -30,9 +30,11 @@ export default function ContactPage() {
             before sending.
           </p>
           <div className="membership-contact-actions">
-            <a className="button button-light" href={siteConfig.stayEmailUrl}>
-              <EmailIcon /> {siteConfig.membershipEmail}{" "}
-              <span aria-hidden="true">↗</span>
+            <a
+              className="button button-light"
+              href={`mailto:${siteConfig.reservationEmail}?subject=${encodeURIComponent("Reservation enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to enquire about a stay, reservation or booking details.\n\nThank you.\n\n[Your Name]")}`}
+            >
+              <EmailIcon /> {siteConfig.reservationEmail}
             </a>
             <a
               className="button button-whatsapp"
@@ -40,8 +42,7 @@ export default function ContactPage() {
               rel="noreferrer"
               target="_blank"
             >
-              <WhatsAppIcon /> {siteConfig.membershipWhatsApp}{" "}
-              <span aria-hidden="true">↗</span>
+              <WhatsAppIcon /> {siteConfig.membershipWhatsApp}
             </a>
           </div>
           <div className="contact-placeholder">
@@ -58,10 +59,10 @@ export default function ContactPage() {
             rel="noreferrer"
             target="_blank"
           >
-            Google Reviews <span aria-hidden="true">↗</span>
+            Google Reviews
           </a>
           <Link className="button button-light review-button" href="/faqs">
-            View FAQs <span aria-hidden="true">→</span>
+            View FAQs
           </Link>
         </div>
         <div className="contact-details">
@@ -93,7 +94,7 @@ export default function ContactPage() {
             rel="noreferrer"
             target="_blank"
           >
-            Open directions <span aria-hidden="true">↗</span>
+            Open directions
           </a>
         </div>
       </section>

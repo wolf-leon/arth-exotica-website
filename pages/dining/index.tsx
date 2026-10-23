@@ -32,9 +32,17 @@ export default function DiningPage() {
             request. Contact the hotel for the current selection, reservations
             and private dining possibilities.
           </p>
-          <a className="text-link" href="/contact">
-            Enquire about dining <span aria-hidden="true">→</span>
-          </a>
+          <div className="dining-actions">
+            <a className="text-link" href="/contact">
+              Enquire about dining
+            </a>
+            <a
+              className="text-link text-link-secondary"
+              href={`mailto:reservations@arthexotica.com?subject=${encodeURIComponent("Dining reservation enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to reserve a dining space / table for a date and time.\n\nPlease advise availability and next steps.\n\nThank you.\n\n[Your Name]")}`}
+            >
+              Reserve dining space
+            </a>
+          </div>
         </div>
         <div className="dining-gallery">
           <img alt="Restaurant seating area" src="/dine-in-2.jpg" />

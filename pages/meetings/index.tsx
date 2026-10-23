@@ -1,5 +1,7 @@
 import DefaultLayout from "@/layouts/default";
 import { EnquiryBand, PageHero } from "@/components/page-blocks";
+import { EmailIcon, WhatsAppIcon } from "@/components/icons";
+import { siteConfig } from "@/config/site";
 
 export default function MeetingsPage() {
   return (
@@ -84,6 +86,36 @@ export default function MeetingsPage() {
               Enquire about group accommodation and tailored corporate
               arrangements.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="meeting-contact section-wrap">
+        <div className="meeting-contact-copy">
+          <p className="eyebrow dark-eyebrow">Ways to contact</p>
+          <h2>
+            We’ll help you
+            <br />
+            <em>plan with ease.</em>
+          </h2>
+          <p className="meeting-contact-subtext">
+            Share your event goals, preferred dates and guest count and our team
+            will guide you to the right setting, setup and next steps.
+          </p>
+          <div className="membership-contact-actions">
+            <a
+              className="button button-light"
+              href={`mailto:reservations@arthexotica.com?subject=${encodeURIComponent("Meeting / event enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to enquire about a meeting, conference or event space.\n\nPlease share availability, capacity and next steps.\n\nThank you.\n\n[Your Name]")}`}
+            >
+              <EmailIcon /> reservations@arthexotica.com
+            </a>
+            <a
+              className="button button-whatsapp"
+              href={`https://wa.me/${siteConfig.membershipWhatsApp.replace("+", "")}?text=${encodeURIComponent("Hello Team Arth Exotica, I would like to enquire about a meeting or event space.")}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <WhatsAppIcon /> {siteConfig.membershipWhatsApp}
+            </a>
           </div>
         </div>
       </section>

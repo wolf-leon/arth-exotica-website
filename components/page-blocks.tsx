@@ -51,7 +51,7 @@ export function EnquiryBand({
         <p>{copy}</p>
       </div>
       <Link className="button button-light" href="/contact">
-        Make an enquiry <span aria-hidden="true">↗</span>
+        Make an enquiry
       </Link>
     </section>
   );
@@ -95,7 +95,7 @@ export function LocationMap() {
           rel="noreferrer"
           target="_blank"
         >
-          Open in Google Maps <span aria-hidden="true">↗</span>
+          Open in Google Maps
         </a>
       </div>
       <iframe

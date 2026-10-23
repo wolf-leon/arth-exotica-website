@@ -17,7 +17,7 @@ const questions = [
   {
     question: "How do I book a stay?",
     answer:
-      "Use the Book your stay link to open the hotel booking engine. Rates, availability and booking terms are displayed there.",
+      "Use the Book your stay link to reach our contact page, where you can send your enquiry directly to the hotel team.",
   },
   {
     question: "What are the check-in and check-out times?",
@@ -76,7 +76,7 @@ export default function FAQsPage() {
             you travel.
           </p>
           <Link className="text-link" href="/contact">
-            Contact the hotel <span aria-hidden="true">→</span>
+            Contact the hotel
           </Link>
         </div>
         <div className="faq-list">

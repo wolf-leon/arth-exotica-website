@@ -47,7 +47,7 @@ export default function ExperiencesPage() {
             current offerings.
           </p>
           <Link className="text-link" href="/contact">
-            Ask about wellness <span aria-hidden="true">→</span>
+            Ask about wellness
           </Link>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function ExperiencesPage() {
             hotel management for current membership details.
           </p>
           <Link className="text-link" href="/memberships">
-            Explore memberships <span aria-hidden="true">→</span>
+            Explore memberships
           </Link>
         </div>
         <div className="membership-note">

@@ -39,8 +39,7 @@ export default function MembershipsPage() {
               className="button button-light"
               href={siteConfig.membershipEmailUrl}
             >
-              <EmailIcon /> {siteConfig.membershipEmail}{" "}
-              <span aria-hidden="true">↗</span>
+              <EmailIcon /> {siteConfig.membershipEmail}
             </a>
             <a
               className="button button-whatsapp"
@@ -48,16 +47,15 @@ export default function MembershipsPage() {
               rel="noreferrer"
               target="_blank"
             >
-              <WhatsAppIcon /> {siteConfig.membershipWhatsApp}{" "}
-              <span aria-hidden="true">↗</span>
+              <WhatsAppIcon /> {siteConfig.membershipWhatsApp}
             </a>
           </div>
           <p className="careers-note">
             Membership plans, benefits and terms should be confirmed directly
             with hotel management.
           </p>
-          <Link className="text-link" href="/contact">
-            More ways to contact us <span aria-hidden="true">→</span>
+          <Link className="text-link membership-contact-link" href="/contact">
+            More ways to contact us
           </Link>
         </div>
       </section>

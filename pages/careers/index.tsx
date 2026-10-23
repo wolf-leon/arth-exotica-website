@@ -24,29 +24,36 @@ export default function CareersPage() {
         <div className="careers-copy">
           <p>
             We welcome people who care about the details and enjoy making guests
-            feel at home. Email your resume to the Arth Exotica HR team:
+            feel at home.
           </p>
-          <p className="careers-email">
-            HR email{" "}
+          <div className="careers-email-box">
+            <img
+              alt="Arth Exotica"
+              className="careers-logo"
+              src="/hotel-logo-without-bg.png"
+            />
+            <p className="eyebrow dark-eyebrow">Send your CV</p>
             <a href={`mailto:${siteConfig.hrEmail}`}>{siteConfig.hrEmail}</a>
-          </p>
-          <p>
-            You can also look for current openings through these job platforms:
-          </p>
-          <div className="career-searches">
+            <span>
+              Share the role you are interested in, your contact details and a
+              short note about your experience.
+            </span>
+          </div>
+          <div className="careers-follow-box">
+            <p>
+              Keep an eye out on LinkedIn for any roles posted, and follow our
+              page for the latest updates.
+            </p>
             <a
-              href="https://www.indeed.com/jobs?q=Arth+Exotica+Goa"
+              className="button button-linkedin"
+              href={
+                siteConfig.socials.find((social) => social.label === "LinkedIn")
+                  ?.url
+              }
               rel="noreferrer"
               target="_blank"
             >
-              Search Indeed <span aria-hidden="true">↗</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/jobs/search/?keywords=Arth%20Exotica%20Goa"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Search LinkedIn <span aria-hidden="true">↗</span>
+              Follow on LinkedIn
             </a>
           </div>
           <p className="careers-note">

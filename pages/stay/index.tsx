@@ -35,15 +35,10 @@ export default function StayPage() {
             <span>40 rooms</span>
             <span>Thoughtful comforts</span>
             <span>Restful interiors</span>
-            <span>Goa, at your pace</span>
+            <span>Goa, slow living</span>
           </div>
-          <a
-            className="text-link"
-            href={siteConfig.bookingUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Book your stay <span aria-hidden="true">↗</span>
+          <a className="text-link" href={siteConfig.bookingUrl}>
+            Plan your stay
           </a>
         </div>
       </section>
@@ -65,32 +60,100 @@ export default function StayPage() {
             </p>
           </div>
         </div>
-        <div className="section-wrap feature-list">
-          <div>
-            <span>01</span>
-            <h3>Deluxe</h3>
-            <p>
-              A comfortable base for couples and solo travellers. Ask us about
-              occupancy, view and current inclusions.
-            </p>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>Premium</h3>
-            <p>
-              A little more room to settle in. We’ll confirm exact layout,
-              capacity and facilities when you enquire.
-            </p>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>Room facilities</h3>
-            <p>
-              Bed, bedside lighting and seating are visible in the supplied room
-              images. Please check with the hotel for the complete, current
-              amenity list.
-            </p>
-          </div>
+
+        <div className="section-wrap room-card-grid">
+          <article className="room-card">
+            <div className="room-card-media">
+              <img alt="Deluxe room at Arth Exotica" src="/deluxe-room.jpg" />
+            </div>
+            <div className="room-card-body">
+              <div className="room-card-header">
+                <h3>Deluxe</h3>
+                <span className="room-card-tag">Classic</span>
+              </div>
+              <p>
+                A restful base for slow mornings, thoughtful downtime and easy
+                city-to-coast living.
+              </p>
+              <ul>
+                <li>King or twin bed options</li>
+                <li>Private en-suite bathroom</li>
+                <li>Air conditioning</li>
+                <li>Complimentary Wi‑Fi</li>
+                <li>Room service on request</li>
+              </ul>
+              <a
+                className="button room-book-button"
+                href={siteConfig.bookingUrl}
+              >
+                Book now
+              </a>
+            </div>
+          </article>
+
+          <article className="room-card room-card-featured">
+            <div className="room-card-media">
+              <img
+                alt="Premium room at Arth Exotica"
+                src="/premium-deluxe-room.jpg"
+              />
+            </div>
+            <div className="room-card-body">
+              <div className="room-card-header">
+                <h3>Premium</h3>
+                <span className="room-card-tag">Popular</span>
+              </div>
+              <p>
+                Extra comfort and a more generous feel for guests who want room
+                to stretch out and settle in.
+              </p>
+              <ul>
+                <li>Spacious king bed setup</li>
+                <li>Seating lounge area</li>
+                <li>Premium bath amenities</li>
+                <li>Smart TV + Wi‑Fi</li>
+                <li>Soft lighting and curated interiors</li>
+              </ul>
+              <a
+                className="button room-book-button"
+                href={siteConfig.bookingUrl}
+              >
+                Book now
+              </a>
+            </div>
+          </article>
+
+          <article className="room-card">
+            <div className="room-card-media">
+              <img
+                alt="Super Premium room at Arth Exotica"
+                src="/super-premium.jpg"
+              />
+            </div>
+            <div className="room-card-body">
+              <div className="room-card-header">
+                <h3>Super Premium</h3>
+                <span className="room-card-tag">Signature</span>
+              </div>
+              <p>
+                Our elevated option for longer stays, special occasions and more
+                indulgent, polished comfort.
+              </p>
+              <ul>
+                <li>Generous room footprint</li>
+                <li>Luxury bedding and finishes</li>
+                <li>Enhanced lounge and storage</li>
+                <li>Premium bath and linen collection</li>
+                <li>Priority assistance on request</li>
+              </ul>
+              <a
+                className="button room-book-button"
+                href={siteConfig.bookingUrl}
+              >
+                Book now
+              </a>
+            </div>
+          </article>
         </div>
       </section>
       <section className="guest-info section-wrap" id="guest-information">
